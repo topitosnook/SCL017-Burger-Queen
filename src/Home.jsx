@@ -7,10 +7,10 @@ function Home() {
     <>
       <h1>This is Home</h1>
       <section>
-        <Link to="/profile">
+        <Link to="/kitchen">
           <button type="button"> Cocina </button>
         </Link>
-        <Link to="/profile">
+        <Link to="/profiles">
           <button type="button"> Meserx </button>
         </Link>
       </section>
