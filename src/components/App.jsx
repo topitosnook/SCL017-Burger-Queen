@@ -5,6 +5,7 @@ import Home from './Home';
 import Profile from './Profile';
 import Kitchen from './Kitchen';
 import Tables from './Tables';
+import Menu from './Menu';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/profiles" component={Profile} />
           <Route path="/kitchen" component={Kitchen} />
           <Route path="/tables" component={Tables} />
+          <Route path="/menu" component={Menu} />
 
         </Switch>
       </div>
