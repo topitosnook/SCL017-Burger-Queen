@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Profile() {
+export default function Waiters() {
   return (
     <section>
       <h1> Eleccion del Meser@</h1>

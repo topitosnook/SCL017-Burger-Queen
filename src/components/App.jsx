@@ -2,7 +2,7 @@ import '../App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React from 'react';
 import Home from './Home';
-import Profile from './Profile';
+import Profile from './Waiters';
 import Kitchen from './Kitchen';
 import Tables from './Tables';
 import Menu from './Menu';
