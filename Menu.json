@@ -1,0 +1,37 @@
+{
+  "Breakfast": {
+    "Drinks": [
+      { "name": "Café americano", "price": 5 },
+      { "name": "Café con leche", "price": 7 },
+      { "name": "Jugo de frutas natural", "price": 7 }
+    ],
+    "Food": { "name": "Sandwich de jamón y queso", "price": 10 }
+  },
+  "Afternoon": {
+    "Burgers": {
+      "Type": ["Vegetarana", "Vacuno", "Pollo"],
+      "AddOns": [
+        { "name": "Queso", "price": 1 },
+        { "name": "Huevo", "price": 1 }
+      ],
+      "Size": [
+        { "name": "Simple", "price": 10 },
+        { "name": "Doble", "price": 15 }
+      ]
+    },
+    "Side dish": [
+      { "name": "Papas fritas", "price": 5 },
+      { "name": "Aros de cebolla", "price": 5 }
+    ],
+    "Drinks": {
+      "Agua": [
+        { "size": "500 ml", "price": 5 },
+        { "size": "750 ml", "price": 7 }
+      ],
+      "Bebida": [
+        { "size": "500 ml", "price": 7 },
+        { "size": "750 ml", "price": 10 }
+      ]
+    }
+  }
+}
