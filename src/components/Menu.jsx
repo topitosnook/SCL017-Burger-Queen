@@ -1,17 +1,60 @@
 import React from 'react';
 import { useLocation } from 'react-router';
+import carte from './FoodMenu.json';
 
+console.log(carte.breakfast.food.name);
 export default function Menu() {
   const location = useLocation();
-  console.log(location);
   return (
-    <section>
-      Menu
-      <section>
+    <>
+      <section id="menu">
+        <h1>Menú</h1>
+        <section id="breakfast">
+          <h2>Breakfast</h2>
+          <h3> Sandwich </h3>
+          <p>Aqui va el menu</p>
+          <h3> Para tomar </h3>
+        </section>
+        <section id="not-breakfast">
+          <h2>Breakfast</h2>
+          <h3> Sandwich </h3>
+          <p>
+            {carte.breakfast.food[0].name}
+            {' '}
+            $
+            {carte.breakfast.food[0].price}
+            <br />
+            {carte.breakfast.food[1].name}
+            {' '}
+            $
+            {carte.breakfast.food[1].price}
+          </p>
+          <h3> Para tomar </h3>
+          <p>
+            {carte.breakfast.drinks[0].name}
+            {' '}
+            $
+            {carte.breakfast.drinks[0].price}
+            {' '}
+            <br />
+            {carte.breakfast.drinks[1].name}
+            {' '}
+            $
+            {carte.breakfast.drinks[1].price}
+            {' '}
+            <br />
+            {carte.breakfast.drinks[2].name}
+            {' '}
+            $
+            {carte.breakfast.drinks[2].price}
+          </p>
+        </section>
+      </section>
+      <section id="order">
         <h2>Pedido</h2>
         <h3>{location.state[0]}</h3>
         <h3>{location.state[1]}</h3>
       </section>
-    </section>
+    </>
   );
 }

@@ -12,6 +12,12 @@ export default function Waiters() {
       <Link to={{ pathname: '/tables', state: 'Mesero 2' }}>
         <button type="button">Waiter 2</button>
       </Link>
+      <Link to={{ pathname: '/tables', state: 'Mesero 3' }}>
+        <button type="button">Waiter 3</button>
+      </Link>
+      <Link to={{ pathname: '/tables', state: 'Mesero 4' }}>
+        <button type="button">Waiter 4</button>
+      </Link>
       {/* <button type="button">Confirmar</button> */}
     </section>
   );

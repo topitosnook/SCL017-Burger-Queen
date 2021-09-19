@@ -11,8 +11,20 @@ export default function Tables() {
         <Link to={{ pathname: '/menu', state: [location.state, 'Mesa 1'] }}>
           <button type="button"> Mesa 1</button>
         </Link>
-        <Link to={{ pathname: '/menu', state: 'Mesa 1' }}>
+        <Link to={{ pathname: '/menu', state: [location.state, 'Mesa 2'] }}>
           <button type="button"> Mesa 2</button>
+        </Link>
+        <Link to={{ pathname: '/menu', state: [location.state, 'Mesa 3'] }}>
+          <button type="button"> Mesa 3</button>
+        </Link>
+        <Link to={{ pathname: '/menu', state: [location.state, 'Mesa 4'] }}>
+          <button type="button"> Mesa 4</button>
+        </Link>
+        <Link to={{ pathname: '/menu', state: [location.state, 'Mesa 5'] }}>
+          <button type="button"> Mesa 5</button>
+        </Link>
+        <Link to={{ pathname: '/menu', state: [location.state, 'Para llevar'] }}>
+          <button type="button">Para llevar</button>
         </Link>
       </section>
       <section>
