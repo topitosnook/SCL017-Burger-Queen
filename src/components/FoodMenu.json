@@ -5,11 +5,14 @@
       { "name": "Café con leche", "price": 7 },
       { "name": "Jugo de frutas natural", "price": 7 }
     ],
-    "food": { "name": "Sandwich de jamón y queso", "price": 10 }
+    "food": [
+      { "name": "Sandwich de jamón y queso", "price": 10 },
+      { "name": "Sandwich palta", "price": 10 }
+    ]
   },
   "afternoon": {
     "burgers": {
-      "type": ["Vegetarana", "Vacuno", "Pollo"],
+      "type": ["Vegetariana", "Vacuno", "Pollo"],
       "addOns": [
         { "name": "Queso", "price": 1 },
         { "name": "Huevo", "price": 1 }
@@ -28,7 +31,7 @@
         { "size": "500 ml", "price": 5 },
         { "size": "750 ml", "price": 7 }
       ],
-      "drink": [
+      "soda": [
         { "size": "500 ml", "price": 7 },
         { "size": "750 ml", "price": 10 }
       ]

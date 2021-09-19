@@ -2,7 +2,11 @@
   background-color: #071433;
   color: #E3DEB8;
 }
+
 .App {
   text-align: center;
 }
 
+#menu, #order{
+  background-color: #291A54;
+}
