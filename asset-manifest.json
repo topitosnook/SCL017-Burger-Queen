@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/SCL017-Spooky-Burger/static/css/main.44634cc5.chunk.css",
+    "main.js": "/SCL017-Spooky-Burger/static/js/main.8fcee8ee.chunk.js",
+    "main.js.map": "/SCL017-Spooky-Burger/static/js/main.8fcee8ee.chunk.js.map",
+    "runtime-main.js": "/SCL017-Spooky-Burger/static/js/runtime-main.b04bf59b.js",
+    "runtime-main.js.map": "/SCL017-Spooky-Burger/static/js/runtime-main.b04bf59b.js.map",
+    "static/js/2.bebe6442.chunk.js": "/SCL017-Spooky-Burger/static/js/2.bebe6442.chunk.js",
+    "static/js/2.bebe6442.chunk.js.map": "/SCL017-Spooky-Burger/static/js/2.bebe6442.chunk.js.map",
+    "index.html": "/SCL017-Spooky-Burger/index.html",
+    "static/css/main.44634cc5.chunk.css.map": "/SCL017-Spooky-Burger/static/css/main.44634cc5.chunk.css.map",
+    "static/js/2.bebe6442.chunk.js.LICENSE.txt": "/SCL017-Spooky-Burger/static/js/2.bebe6442.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b04bf59b.js",
+    "static/js/2.bebe6442.chunk.js",
+    "static/css/main.44634cc5.chunk.css",
+    "static/js/main.8fcee8ee.chunk.js"
+  ]
+}
