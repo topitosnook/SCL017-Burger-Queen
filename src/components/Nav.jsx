@@ -1,15 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className="navbar">
       <h3>Logo</h3>
-      <ul>
-        <Link to="/">
-          <li>Inicio</li>
-        </Link>
-      </ul>
+      <a href="/" className="navbarLinks">
+        Inicio
+      </a>
     </nav>
   );
 }
