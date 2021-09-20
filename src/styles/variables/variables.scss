@@ -23,8 +23,8 @@ $titleFont: 'Arvo', serif;
   font-family: $bodyFont;
 }
 
-@mixin flexBetween {
+@mixin flex($content) {
   display: flex;
-  justify-content: space-between;
+  justify-content: $content;
   align-items: center;
 }

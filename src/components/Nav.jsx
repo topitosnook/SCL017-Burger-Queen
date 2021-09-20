@@ -1,15 +1,26 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 // import { Link } from 'react-router-dom';
+
+function NavLanding() {
+  return (
+    <nav className="navbar">
+      <NavLink to="/" exact className="navbarLinks" activeClassName="active">
+        Inicio
+      </NavLink>
+    </nav>
+  );
+}
 
 function NavWaiter() {
   return (
     <nav className="navbar">
-      <h3>Logo</h3>
-      <section>
-        <a href="/" className="navbarLinks">
-          Inicio
-        </a>
-      </section>
+      <NavLink to="/" exact className="navbarLinks">
+        Inicio
+      </NavLink>
+      <NavLink to="/waiters" className="navbarLinks" activeClassName="active">
+        Waiter
+      </NavLink>
     </nav>
   );
 }
@@ -17,15 +28,15 @@ function NavWaiter() {
 function NavTables() {
   return (
     <nav className="navbar">
-      <h3>Logo</h3>
-      <section>
-        <a href="/" className="navbarLinks">
-          Inicio
-        </a>
-        <a href="/waiters" className="navbarLinks">
-          Waiter
-        </a>
-      </section>
+      <NavLink to="/" exact className="navbarLinks">
+        Inicio
+      </NavLink>
+      <NavLink to="/waiters" className="navbarLinks">
+        Waiter
+      </NavLink>
+      <NavLink to="/tables" className="navbarLinks" activeClassName="active">
+        Mesas
+      </NavLink>
     </nav>
   );
 }
@@ -33,20 +44,22 @@ function NavTables() {
 function NavMenu() {
   return (
     <nav className="navbar">
-      <h3>Logo</h3>
-      <section>
-        <a href="/" className="navbarLinks">
-          Inicio
-        </a>
-        <a href="/waiters" className="navbarLinks">
-          Waiter
-        </a>
-        <a href="/tables" className="navbarLinks">
-          Mesas
-        </a>
-      </section>
+      <NavLink to="/" exact className="navbarLinks">
+        Inicio
+      </NavLink>
+      <NavLink to="/waiters" className="navbarLinks">
+        Waiter
+      </NavLink>
+      <NavLink to="/tables" className="navbarLinks">
+        Mesas
+      </NavLink>
+      <NavLink to="/menu" className="navbarLinks" activeClassName="active">
+        Menú
+      </NavLink>
     </nav>
   );
 }
 
-export { NavWaiter, NavTables, NavMenu };
+export {
+  NavWaiter, NavTables, NavMenu, NavLanding,
+};

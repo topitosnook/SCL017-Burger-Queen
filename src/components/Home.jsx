@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { NavLanding } from './Nav';
 
 function Home() {
   return (
     <>
+      <NavLanding />
       <h1>This is Home</h1>
       <section>
         <Link to="/kitchen">

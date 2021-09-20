@@ -12,7 +12,7 @@ body {
 }
 
 .navbar {
-  @include flexBetween();
+  @include flex(center);
   font-family: $titleFont;
   padding: 0 20px 0 20px;
   a {
@@ -29,7 +29,8 @@ h2 {
 }
 
 h3,
-h4 {
+h4, 
+p {
   font-family: $bodyFont;
 }
 
@@ -43,7 +44,7 @@ h4 {
 }
 
 .menuContainer {
-  @include flexBetween();
+  @include flex(space-between);
   margin: 0% 5% 0% 5%;
   #menu,
   #order {
@@ -56,4 +57,11 @@ h4 {
   h2 {
     color: $ligthOrange;
   }
+}
+
+.active{
+  border-style: solid;
+  border-radius: 8px;
+  padding: 5px;
+  border-color: $ligthOrange; 
 }

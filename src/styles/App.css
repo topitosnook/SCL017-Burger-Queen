@@ -14,9 +14,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -37,7 +37,8 @@ h2 {
 }
 
 h3,
-h4 {
+h4,
+p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -89,5 +90,12 @@ h4 {
 
 .menuContainer h2 {
   color: #FAAB23;
+}
+
+.active {
+  border-style: solid;
+  border-radius: 8px;
+  padding: 5px;
+  border-color: #FAAB23;
 }
 /*# sourceMappingURL=App.css.map */
