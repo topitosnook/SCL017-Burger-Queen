@@ -1,12 +1,12 @@
-import '../App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import React from 'react';
-import Home from './Home';
-import Profile from './Waiters';
-import Kitchen from './Kitchen';
-import Tables from './Tables';
-import Menu from './Menu';
-import Nav from './Nav';
+import Home from './components/Home';
+import Profile from './components/Waiters';
+import Kitchen from './components/Kitchen';
+import Tables from './components/Tables';
+import Menu from './components/Menu';
+import Nav from './components/Nav';
+import './styles/App.css';
 
 function App() {
   return (

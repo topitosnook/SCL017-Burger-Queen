@@ -1,4 +1,7 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+body {
+  margin: 0;
+  padding: 0;
   background-color: #071433;
   color: #E3DEB8;
 }
@@ -7,6 +10,23 @@
   text-align: center;
 }
 
-#menu, #order{
-  background-color: #291A54;
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Arvo", serif;
 }
+
+.navbar a {
+  color: #E3DEB8;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 10px;
+}
+/*# sourceMappingURL=App.css.map */
