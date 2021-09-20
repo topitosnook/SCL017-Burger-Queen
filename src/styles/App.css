@@ -21,6 +21,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-family: "Arvo", serif;
+  padding: 0 20px 0 20px;
 }
 
 .navbar a {
@@ -28,5 +29,65 @@ body {
   font-size: 20px;
   text-decoration: none;
   margin: 10px;
+}
+
+h1,
+h2 {
+  font-family: "Arvo", serif;
+}
+
+h3,
+h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tableButton {
+  width: 200px;
+  height: 40px;
+  background-color: #FAAB23;
+  color: #071433;
+  font-size: 25px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.electionButton,
+.waiterButton {
+  width: 200px;
+  height: 40px;
+  background-color: #DE432F;
+  color: #E3DEB8;
+  font-size: 25px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menuContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0% 5% 0% 5%;
+}
+
+.menuContainer #menu,
+.menuContainer #order {
+  background-color: #291A54;
+  border: none;
+  border-radius: 8px;
+  padding: 5%;
+}
+
+.menuContainer h2 {
+  color: #FAAB23;
 }
 /*# sourceMappingURL=App.css.map */

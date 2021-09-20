@@ -9,3 +9,22 @@ $darkOrange: #DE432F;
 // Fonts
 $bodyFont:  Verdana, Geneva, Tahoma, sans-serif;
 $titleFont: 'Arvo', serif;
+
+// helpers
+@mixin Button($backgroundColor, $fontColor) {
+  width: 200px;
+  height: 40px;
+  background-color: $backgroundColor;
+  color: $fontColor;
+  font-size: 25px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px;
+  font-family: $bodyFont;
+}
+
+@mixin flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,25 +1,59 @@
-@import'./variables/variables';
+@import './variables/variables';
 
-body{
-  margin:0;
+body {
+  margin: 0;
   padding: 0;
   background-color: $blueBackground;
   color: $white;
 }
 
-.App{
+.App {
   text-align: center;
 }
 
-.navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.navbar {
+  @include flexBetween();
   font-family: $titleFont;
-  a{
-    color:$white;
+  padding: 0 20px 0 20px;
+  a {
+    color: $white;
     font-size: 20px;
     text-decoration: none;
-    margin:10px;
+    margin: 10px;
+  }
+}
+
+h1,
+h2 {
+  font-family: $titleFont;
+}
+
+h3,
+h4 {
+  font-family: $bodyFont;
+}
+
+.tableButton {
+  @include Button($ligthOrange, $blueBackground);
+}
+
+.electionButton,
+.waiterButton {
+  @include Button($darkOrange, $white);
+}
+
+.menuContainer {
+  @include flexBetween();
+  margin: 0% 5% 0% 5%;
+  #menu,
+  #order {
+    background-color: $purpleBackground;
+    border: none;
+    border-radius: 8px;
+    padding: 5%;
+  }
+
+  h2 {
+    color: $ligthOrange;
   }
 }
