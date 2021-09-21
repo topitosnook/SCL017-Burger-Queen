@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 function NavLanding() {
   return (
     <nav className="navbar">
-      <NavLink to="/" exact className="navbarLinks" activeClassName="active">
+      <NavLink to="/SCL017-Spooky-Burger/" exact className="navbarLinks" activeClassName="active">
         Inicio
       </NavLink>
     </nav>
@@ -15,10 +15,10 @@ function NavLanding() {
 function NavWaiter() {
   return (
     <nav className="navbar">
-      <NavLink to="/" exact className="navbarLinks">
+      <NavLink to="/SCL017-Spooky-Burger/" exact className="navbarLinks">
         Inicio
       </NavLink>
-      <NavLink to="/waiters" className="navbarLinks" activeClassName="active">
+      <NavLink to="/SCL017-Spooky-Burger/waiters" className="navbarLinks" activeClassName="active">
         Waiter
       </NavLink>
     </nav>
@@ -28,13 +28,13 @@ function NavWaiter() {
 function NavTables() {
   return (
     <nav className="navbar">
-      <NavLink to="/" exact className="navbarLinks">
+      <NavLink to="/SCL017-Spooky-Burger/" exact className="navbarLinks">
         Inicio
       </NavLink>
-      <NavLink to="/waiters" className="navbarLinks">
+      <NavLink to="/SCL017-Spooky-Burger/waiters" className="navbarLinks">
         Waiter
       </NavLink>
-      <NavLink to="/tables" className="navbarLinks" activeClassName="active">
+      <NavLink to="/SCL017-Spooky-Burger/tables" className="navbarLinks" activeClassName="active">
         Mesas
       </NavLink>
     </nav>
@@ -44,16 +44,16 @@ function NavTables() {
 function NavMenu() {
   return (
     <nav className="navbar">
-      <NavLink to="/" exact className="navbarLinks">
+      <NavLink to="/SCL017-Spooky-Burger/" exact className="navbarLinks">
         Inicio
       </NavLink>
-      <NavLink to="/waiters" className="navbarLinks">
+      <NavLink to="/SCL017-Spooky-Burger/waiters" className="navbarLinks">
         Waiter
       </NavLink>
-      <NavLink to="/tables" className="navbarLinks">
+      <NavLink to="/SCL017-Spooky-Burger/tables" className="navbarLinks">
         Mesas
       </NavLink>
-      <NavLink to="/menu" className="navbarLinks" activeClassName="active">
+      <NavLink to="/SCL017-Spooky-Burger/menu" className="navbarLinks" activeClassName="active">
         Menú
       </NavLink>
     </nav>

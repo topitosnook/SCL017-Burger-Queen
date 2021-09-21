@@ -8,10 +8,10 @@ function Home() {
       <NavLanding />
       <h1>This is Home</h1>
       <section>
-        <Link to="/kitchen">
+        <Link to="/SCL017-Spooky-Burger/kitchen">
           <button className="electionButton" type="button"> Cocina </button>
         </Link>
-        <Link to="/waiters">
+        <Link to="/SCL017-Spooky-Burger/waiters">
           <button className="electionButton" type="button"> Meserx </button>
         </Link>
       </section>

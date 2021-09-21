@@ -11,38 +11,38 @@ export default function Tables() {
       <section className="container">
         <h1>Eleccion de las mesas</h1>
         <section className="tablesSection">
-          <Link to={{ pathname: '/menu', state: [location.state, 'Mesa 1'] }}>
+          <Link to={{ pathname: '/SCL017-Spooky-Burger/menu', state: [location.state, 'Mesa 1'] }}>
             <button className="tableButton" type="button">
               {' '}
               Mesa 1
             </button>
           </Link>
-          <Link to={{ pathname: '/menu', state: [location.state, 'Mesa 2'] }}>
+          <Link to={{ pathname: '/SCL017-Spooky-Burger/menu', state: [location.state, 'Mesa 2'] }}>
             <button className="tableButton" type="button">
               {' '}
               Mesa 2
             </button>
           </Link>
-          <Link to={{ pathname: '/menu', state: [location.state, 'Mesa 3'] }}>
+          <Link to={{ pathname: '/SCL017-Spooky-Burger/menu', state: [location.state, 'Mesa 3'] }}>
             <button className="tableButton" type="button">
               {' '}
               Mesa 3
             </button>
           </Link>
-          <Link to={{ pathname: '/menu', state: [location.state, 'Mesa 4'] }}>
+          <Link to={{ pathname: '/SCL017-Spooky-Burger/menu', state: [location.state, 'Mesa 4'] }}>
             <button className="tableButton" type="button">
               {' '}
               Mesa 4
             </button>
           </Link>
-          <Link to={{ pathname: '/menu', state: [location.state, 'Mesa 5'] }}>
+          <Link to={{ pathname: '/SCL017-Spooky-Burger/menu', state: [location.state, 'Mesa 5'] }}>
             <button className="tableButton" type="button">
               {' '}
               Mesa 5
             </button>
           </Link>
           <Link
-            to={{ pathname: '/menu', state: [location.state, 'Para llevar'] }}
+            to={{ pathname: '/SCL017-Spooky-Burger/menu', state: [location.state, 'Para llevar'] }}
           >
             <button className="tableButton" type="button">
               Para llevar

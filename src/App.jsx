@@ -12,11 +12,11 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/waiters" component={Waiters} />
-          <Route path="/kitchen" component={Kitchen} />
-          <Route path="/tables" component={Tables} />
-          <Route path="/menu" component={Menu} />
+          <Route path="/SCL017-Spooky-Burger/" exact component={Home} />
+          <Route path="/SCL017-Spooky-Burger/waiters" component={Waiters} />
+          <Route path="/SCL017-Spooky-Burger/kitchen" component={Kitchen} />
+          <Route path="/SCL017-Spooky-Burger/tables" component={Tables} />
+          <Route path="/SCL017-Spooky-Burger/menu" component={Menu} />
         </Switch>
       </div>
     </Router>
