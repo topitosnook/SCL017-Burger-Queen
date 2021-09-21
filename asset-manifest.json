@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SCL017-Spooky-Burger/static/css/main.44634cc5.chunk.css",
-    "main.js": "/SCL017-Spooky-Burger/static/js/main.a3dbfaab.chunk.js",
-    "main.js.map": "/SCL017-Spooky-Burger/static/js/main.a3dbfaab.chunk.js.map",
+    "main.js": "/SCL017-Spooky-Burger/static/js/main.5dff38b7.chunk.js",
+    "main.js.map": "/SCL017-Spooky-Burger/static/js/main.5dff38b7.chunk.js.map",
     "runtime-main.js": "/SCL017-Spooky-Burger/static/js/runtime-main.b04bf59b.js",
     "runtime-main.js.map": "/SCL017-Spooky-Burger/static/js/runtime-main.b04bf59b.js.map",
     "static/js/2.bebe6442.chunk.js": "/SCL017-Spooky-Burger/static/js/2.bebe6442.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.b04bf59b.js",
     "static/js/2.bebe6442.chunk.js",
     "static/css/main.44634cc5.chunk.css",
-    "static/js/main.a3dbfaab.chunk.js"
+    "static/js/main.5dff38b7.chunk.js"
   ]
 }
