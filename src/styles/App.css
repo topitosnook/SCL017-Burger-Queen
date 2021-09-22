@@ -31,6 +31,21 @@ body {
   margin: 10px;
 }
 
+.menuLinks {
+  background-color: #071433;
+  color: #E3DEB8;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+.menuLinks:focus {
+  -webkit-box-shadow: 0 0 0 2px #E3DEB8, 0 0 3px 5px #FAAB23;
+          box-shadow: 0 0 0 2px #E3DEB8, 0 0 3px 5px #FAAB23;
+}
+
 h1,
 h2 {
   font-family: "Arvo", serif;
