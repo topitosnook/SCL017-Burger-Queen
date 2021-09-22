@@ -18,7 +18,7 @@
   "plugins": ["react", "jsx-a11y"],
   "rules": {
     "no-console": "off",
-    "linebreak-style": ["error", "windows"],
-    "react/jsx-one-expression-per-line": "literal"
+    "linebreak-style": ["error", "windows"]
+    // "react/jsx-one-expression-per-line": "literal"
   }
 }
