@@ -101,7 +101,7 @@ export default function Menu() {
           </nav>
           <section>{myMenu}</section>
         </section>
-        <Order />
+        <Order name="hola" />
       </section>
     </>
   );
