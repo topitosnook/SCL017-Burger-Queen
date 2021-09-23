@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import carte from './FoodMenu.json';
 import { NavMenu } from './Nav';
 import Order from './Order';
+import MetaDecorator from './MetaDecorator';
 
 export default function Menu() {
   const breakfastMenu = () => (
@@ -87,6 +88,7 @@ export default function Menu() {
 
   return (
     <>
+      <MetaDecorator title="Menu - Spooky Burger" />
       <NavMenu />
       <h1>Menú</h1>
       <section className="menuContainer">

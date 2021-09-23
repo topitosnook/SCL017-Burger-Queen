@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router';
+import MetaDecorator from './MetaDecorator';
 // import { Link } from 'react-router-dom';
 import { NavTables } from './Nav';
 import Table from './Table';
@@ -8,6 +9,7 @@ export default function Tables() {
   const location = useLocation();
   return (
     <>
+      <MetaDecorator title="Mesas - Spooky Burger" />
       <NavTables />
       <section className="container">
         <h1>Eleccion de las mesas</h1>

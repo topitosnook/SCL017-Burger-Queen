@@ -1,4 +1,5 @@
 import React from 'react';
+import MetaDecorator from './MetaDecorator';
 // import { Link } from 'react-router-dom';
 import { NavWaiter } from './Nav';
 import Waiter from './Waiter';
@@ -6,6 +7,7 @@ import Waiter from './Waiter';
 export default function Waiters() {
   return (
     <>
+      <MetaDecorator title="Ingreso Personal - Spooky Burger" />
       <NavWaiter />
       <section>
         <h1> Eleccion del Meser@</h1>
