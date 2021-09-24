@@ -18,7 +18,12 @@
   "plugins": ["react", "jsx-a11y"],
   "rules": {
     "no-console": "off",
-    "linebreak-style": ["error", "windows"]
-    // "react/jsx-one-expression-per-line": "literal"
+    "linebreak-style": ["error", "windows"],
+    "arrow-body-style":"off",
+    "react/no-array-index-key":"off",
+    "react/jsx-one-expression-per-line": "off",
+    "no-unused-vars":"off",
+    "react/prop-types":"off",
+    "no-else-return":"off"
   }
 }

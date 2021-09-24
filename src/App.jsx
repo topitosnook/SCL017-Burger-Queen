@@ -5,6 +5,7 @@ import Waiters from './components/Waiters';
 import Kitchen from './components/Kitchen';
 import Tables from './components/Tables';
 import Menu from './components/Menu';
+import Menu2 from './components/Menu2';
 import './styles/App.css';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
           <Route path="/SCL017-Spooky-Burger/waiters" component={Waiters} />
           <Route path="/SCL017-Spooky-Burger/kitchen" component={Kitchen} />
           <Route path="/SCL017-Spooky-Burger/tables" component={Tables} />
-          <Route path="/SCL017-Spooky-Burger/menu" component={Menu} />
+          <Route path="/SCL017-Spooky-Burger/menu" component={Menu2} />
         </Switch>
       </div>
     </Router>
