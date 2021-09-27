@@ -24,6 +24,8 @@
     "react/jsx-one-expression-per-line": "off",
     "no-unused-vars":"off",
     "react/prop-types":"off",
-    "no-else-return":"off"
+    "no-else-return":"off",
+    "max-len":"off",
+    "no-confusing-arrow":"off"
   }
 }

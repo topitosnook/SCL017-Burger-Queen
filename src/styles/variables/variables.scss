@@ -2,13 +2,13 @@
 
 // Colors
 $blueBackground: #071433;
-$purpleBackground: #291A54;
-$white:#E3DEB8;
-$ligthOrange: #FAAB23;
-$darkOrange: #DE432F;
+$purpleBackground: #291a54;
+$white: #e3deb8;
+$ligthOrange: #faab23;
+$darkOrange: #de432f;
 
 // Fonts
-$bodyFont:  Verdana, Geneva, Tahoma, sans-serif;
+$bodyFont: Verdana, Geneva, Tahoma, sans-serif;
 $titleFont: 'Arvo', serif;
 
 // helpers
@@ -27,7 +27,13 @@ $titleFont: 'Arvo', serif;
 @mixin flex($content) {
   display: flex;
   justify-content: $content;
-  align-items: center;
+  align-items: flex-start;
 }
 
-
+@mixin simbol($color) {
+  margin: 2px;
+  background-color: transparent;
+  color: $color;
+  border: none;
+  font-size: 35px;
+}

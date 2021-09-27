@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Menu1({ items, fallback }) {
+export default function MenuItems({ items, fallback, onAdd }) {
   if (!items || items.length === 0) {
     return fallback;
   }
@@ -10,12 +10,13 @@ export default function Menu1({ items, fallback }) {
         const { id, title, price } = item;
         return (
           <article key={id} className="menu-item">
-            <div>
-              <header>
-                <h4>
-                  {title} ${price}
-                </h4>
-              </header>
+            <div className="eachItem">
+              <h4>
+                {title} ${price}
+              </h4>
+              <div>
+                <button onClick={() => onAdd(item)} type="button" className="addToOrder">Agregar</button>
+              </div>
             </div>
           </article>
         );

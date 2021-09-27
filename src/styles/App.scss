@@ -23,7 +23,7 @@ body {
   }
 }
 
-.menuLinks {
+.filter-btn {
   background-color: $blueBackground;
   color: $white;
   font-size: 20px;
@@ -33,11 +33,11 @@ body {
   border-radius: 8px;
 }
 
-.menuLinks:focus {
-  // background-color: $ligthOrange;
-  // color: $blueBackground;
-  box-shadow: 0 0 0 2px $white, 0 0 3px 5px $ligthOrange;
-}
+// .menuLinks:focus {
+//   // background-color: $ligthOrange;
+//   // color: $blueBackground;
+//   box-shadow: 0 0 0 2px $white, 0 0 3px 5px $ligthOrange;
+// }
 
 h1,
 h2 {
@@ -67,7 +67,13 @@ p {
     background-color: $purpleBackground;
     border: none;
     border-radius: 8px;
-    padding: 5%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  #order {
+    width: 40%;
+    min-height: 100px;
   }
 
   h2 {
@@ -85,3 +91,37 @@ p {
 // #landingTitle{
 //   font-family: monsterPumpkin;
 // }
+
+#tableInfo{
+  @include flex(space-between);
+}
+#firstHalfOrder{
+  line-height: 1px;
+}
+#emptyOrder{
+  color:$darkOrange;
+}
+.itemsInOrder{
+  @include flex(space-between);
+}
+#add{
+  @include simbol(#7C945B);
+}
+#deduct{
+  @include simbol($darkOrange);
+}
+.eachItem{
+  @include flex(space-between);
+  margin: 5px 20px 0 20px;
+}
+.addToOrder{
+  width: 80px;
+  height: 20px;
+  background-color: $darkOrange;
+  color: $white;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  font-family: $bodyFont;
+}
