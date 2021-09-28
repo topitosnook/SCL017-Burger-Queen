@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
 
 export default function Table(props) {
   const { waiter, table } = props;
@@ -14,4 +13,3 @@ export default function Table(props) {
     </>
   );
 }
-Table.propTypes = { waiter: PropTypes.string.isRequired, table: PropTypes.string.isRequired };

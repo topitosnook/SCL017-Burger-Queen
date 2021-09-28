@@ -4,8 +4,10 @@ import Categories from './Categories';
 import MenuItems from './MenuItems';
 import Order from './Order';
 import { NavMenu } from './Nav';
+import MetaDecorator from './MetaDecorator';
 
 const allCategories = ['all', ...new Set(items.products.map((item) => item.category2))];
+const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]');
 export default function Menu() {
   const { products } = items;
   const [menuItems, setMenuItems] = useState(products);
@@ -20,7 +22,10 @@ export default function Menu() {
     const newItems = products.filter((item) => item.category2 === category);
     setMenuItems(newItems);
   };
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState(cartFromLocalStorage);
+  const removeAllItems = () => {
+    setCartItems([]);
+  };
   const onAdd = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
     if (exist) {
@@ -39,6 +44,7 @@ export default function Menu() {
   };
   return (
     <>
+      <MetaDecorator title="Menú - Spooky Burger" />
       <NavMenu />
       <main>
         <section>
@@ -54,7 +60,7 @@ export default function Menu() {
             />
             <MenuItems onAdd={onAdd} items={menuItems} fallback="Loading..." />
           </section>
-          <Order onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} />
+          <Order onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} removeAllItems={removeAllItems} />
         </section>
       </main>
     </>

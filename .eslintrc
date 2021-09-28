@@ -16,7 +16,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "jsx-a11y"],
+  "plugins": ["react", "jsx-a11y", "jest"],
   "rules": {
     "no-console": "off",
     "linebreak-style": ["error", "windows"],
@@ -27,6 +27,7 @@
     "react/prop-types":"off",
     "no-else-return":"off",
     "max-len":"off",
-    "no-confusing-arrow":"off"
+    "no-confusing-arrow":"off",
+    "object-curly-newline":"off"
   }
 }
