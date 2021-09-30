@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
 
 function NavLanding() {
   return (
@@ -60,6 +59,39 @@ function NavMenu() {
   );
 }
 
+function NavKitchen() {
+  return (
+    <nav className="navbar">
+      <NavLink to="/SCL017-Spooky-Burger/" exact className="navbarLinks">
+        Inicio
+      </NavLink>
+      <NavLink to="/SCL017-Spooky-Burger/orders" className="navbarLinks" activeClassName="active">
+        Pedidos
+      </NavLink>
+    </nav>
+  );
+}
+function NavOrders() {
+  return (
+    <nav className="navbar">
+      <NavLink to="/SCL017-Spooky-Burger/" exact className="navbarLinks">
+        Inicio
+      </NavLink>
+      <NavLink to="/SCL017-Spooky-Burger/waiters" className="navbarLinks">
+        Waiter
+      </NavLink>
+      <NavLink to="/SCL017-Spooky-Burger/tables" className="navbarLinks">
+        Mesas
+      </NavLink>
+      <NavLink to="/SCL017-Spooky-Burger/menu" className="navbarLinks">
+        Menú
+      </NavLink>
+      <NavLink to="/SCL017-Spooky-Burger/orders" className="navbarLinks" activeClassName="active">
+        Pedidos
+      </NavLink>
+    </nav>
+  );
+}
 export {
-  NavWaiter, NavTables, NavMenu, NavLanding,
+  NavWaiter, NavTables, NavMenu, NavLanding, NavKitchen, NavOrders,
 };
