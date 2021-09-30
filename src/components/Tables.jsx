@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router';
 import MetaDecorator from './MetaDecorator';
-// import { Link } from 'react-router-dom';
 import { NavTables } from './Nav';
 import Table from './Table';
 
