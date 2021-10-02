@@ -88,33 +88,24 @@ p {
   border-color: $ligthOrange;
 }
 
-// #landingTitle{
-//   font-family: monsterPumpkin;
-// }
-
-#tableInfo{
+#tableInfo {
   @include flex(space-between);
 }
-#firstHalfOrder{
+#firstHalfOrder {
   line-height: 1px;
 }
-#emptyOrder{
-  color:$darkOrange;
+#emptyOrder {
+  color: $darkOrange;
 }
-.itemsInOrder{
-  @include flex(space-between);
+
+#add {
+  @include simbol(#7c945b);
 }
-#add{
-  @include simbol(#7C945B);
-}
-#deduct{
+#deduct {
   @include simbol($darkOrange);
 }
-.eachItem{
-  @include flex(space-between);
-  margin: 5px 20px 0 20px;
-}
-.addToOrder{
+
+.addToOrder {
   width: 80px;
   height: 20px;
   background-color: $darkOrange;
@@ -124,4 +115,16 @@ p {
   border-radius: 10px;
   margin: 5px;
   font-family: $bodyFont;
+}
+
+.eachItem {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center
+}
+.itemsInOrder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
