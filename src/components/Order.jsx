@@ -1,14 +1,35 @@
 import React, { useEffect } from 'react';
+import { collection, addDoc } from 'firebase/firestore';
 import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
+import db from '../firebase';
 
 export default function Order(props) {
   const location = useLocation();
   const { cartItems, onAdd, onRemove, removeAllItems } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.quantity, 0);
-  useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(cartItems));
-  }, [cartItems]);
+  // useEffect(() => {
+  //   localStorage.setItem('cart', JSON.stringify(cartItems));
+  // }, [cartItems]);
+  const waiter = location.state[0];
+  const table = location.state[1];
+  const getDate = () => {
+    const hoy = new Date();
+    const fecha = `${hoy.getDate()} - ${(hoy.getMonth() + 1)} - ${hoy.getFullYear()}`;
+    const hora = `${hoy.getHours()}:${hoy.getMinutes()}:${hoy.getSeconds()}`;
+    const fechaYHora = `${fecha} ${hora}`;
+    return fechaYHora;
+  };
+  const totalPrice = itemsPrice;
+  const toFirebase = async () => {
+    const docRef = await addDoc(collection(db, 'orders'), {
+      Mesero: waiter,
+      Mesa: table,
+      Total: totalPrice,
+      Time: getDate(),
+      Order: cartItems,
+    });
+  };
   return (
     <>
       <aside id="order">
@@ -16,8 +37,8 @@ export default function Order(props) {
           <div id="firstHalfOrder">
             <h2>Pedido</h2>
             <div id="tableInfo">
-              <h3>{location.state[0]}</h3>
-              <h3>{location.state[1]}</h3>
+              <h3>{waiter}</h3>
+              <h3>{table}</h3>
             </div>
             <hr />
           </div>
@@ -55,7 +76,7 @@ export default function Order(props) {
           <div>
             {/* <Link to={{ path: '/SCL017-Spooky-Burger/kitchen', state: [location.state[0], location.state[1]] }}> */}
             <Link to="/SCL017-Spooky-Burger/kitchen">
-              <button type="button">Enviar Pedido</button>
+              <button type="button" onClick={toFirebase}>Enviar Pedido</button>
             </Link>
             <button type="button" onClick={removeAllItems}>Borrar Pedido</button>
           </div>
