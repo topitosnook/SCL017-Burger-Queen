@@ -1,28 +1,11 @@
 import React, { useState } from 'react';
-import items from './data';
 import Categories from './Categories';
 import MenuItems from './MenuItems';
 import Order from './Order';
 import { NavMenu } from './Nav';
 import MetaDecorator from './MetaDecorator';
 
-const allCategories = ['all', ...new Set(items.products.map((item) => item.category2))];
-const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]');
-export default function Menu() {
-  const { products } = items;
-  const [menuItems, setMenuItems] = useState(products);
-  const [activeCategory, setActiveCategory] = useState('');
-  const [categories, setCategories] = useState(allCategories);
-  const filterItems = (category) => {
-    setActiveCategory(category);
-    if (category === 'all') {
-      setMenuItems(products);
-      return;
-    }
-    const newItems = products.filter((item) => item.category2 === category);
-    setMenuItems(newItems);
-  };
-  const [cartItems, setCartItems] = useState(cartFromLocalStorage);
+export default function Menu({ categories, filterItems, activeCategory, menuItems, cartItems, setCartItems }) {
   const removeAllItems = () => {
     setCartItems([]);
   };
@@ -42,13 +25,19 @@ export default function Menu() {
       setCartItems(cartItems.map((x) => x.id === product.id ? { ...exist, quantity: exist.quantity - 1 } : x));
     }
   };
+  const getDate = () => {
+    const hoy = new Date();
+    const fecha = `${hoy.getDate()} - ${(hoy.getMonth() + 1)} - ${hoy.getFullYear()}`;
+    const hora = `${hoy.getHours()}:${hoy.getMinutes()}:${hoy.getSeconds()}`;
+    const fechaYHora = `${fecha} ${hora}`;
+    return fechaYHora;
+  };
   return (
     <>
       <MetaDecorator title="Menú - Spooky Burger" />
       <NavMenu />
       <main>
         <section>
-          {' '}
           <h1>Menu</h1>
         </section>
         <section className="menuContainer">
@@ -58,7 +47,7 @@ export default function Menu() {
               filterItems={filterItems}
               activeCategory={activeCategory}
             />
-            <MenuItems onAdd={onAdd} items={menuItems} fallback="Loading..." />
+            <MenuItems onAdd={onAdd} items={menuItems} />
           </section>
           <Order onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} removeAllItems={removeAllItems} />
         </section>

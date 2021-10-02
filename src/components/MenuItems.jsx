@@ -1,9 +1,6 @@
 import React from 'react';
 
-export default function MenuItems({ items, fallback, onAdd }) {
-  if (!items || items.length === 0) {
-    return fallback;
-  }
+export default function MenuItems({ items, onAdd }) {
   return (
     <div className="section-center">
       {items.map((item) => {
