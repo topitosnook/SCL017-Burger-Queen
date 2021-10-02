@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 
 export default function Order(props) {
   const location = useLocation();
@@ -52,7 +53,10 @@ export default function Order(props) {
             </>
           )}
           <div>
-            <button type="button">Enviar Pedido</button>
+            {/* <Link to={{ path: '/SCL017-Spooky-Burger/kitchen', state: [location.state[0], location.state[1]] }}> */}
+            <Link to="/SCL017-Spooky-Burger/kitchen">
+              <button type="button">Enviar Pedido</button>
+            </Link>
             <button type="button" onClick={removeAllItems}>Borrar Pedido</button>
           </div>
 

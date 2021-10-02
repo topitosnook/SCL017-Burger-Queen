@@ -11,10 +11,14 @@ function Home() {
       <h1 id="landingTitle">This is Home</h1>
       <section>
         <Link to="/SCL017-Spooky-Burger/kitchen">
-          <button className="electionButton" type="button"> Cocina </button>
+          <button className="electionButton" type="button">
+            Cocina
+          </button>
         </Link>
         <Link to="/SCL017-Spooky-Burger/waiters">
-          <button className="electionButton" type="button"> Meserx </button>
+          <button className="electionButton" type="button">
+            Meseros
+          </button>
         </Link>
       </section>
     </>
