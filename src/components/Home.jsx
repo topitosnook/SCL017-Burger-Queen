@@ -8,8 +8,8 @@ function Home() {
     <>
       <MetaDecorator title="Home - Spooky Burger" />
       <NavLanding />
-      <h1 id="landingTitle">This is Home</h1>
-      <section>
+      <main>
+        <h1 lang="en" id="landingTitle">Spooky Burger</h1>
         <Link to="/SCL017-Spooky-Burger/kitchen">
           <button className="electionButton" type="button">
             Cocina
@@ -20,7 +20,7 @@ function Home() {
             Meseros
           </button>
         </Link>
-      </section>
+      </main>
     </>
   );
 }

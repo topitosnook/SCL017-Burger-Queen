@@ -53,7 +53,7 @@ function App() {
             />
           </Route>
           <Route path="/SCL017-Spooky-Burger/kitchen">
-            <Kitchen cartItems={cartItems} />
+            <Kitchen />
           </Route>
         </Switch>
       </div>

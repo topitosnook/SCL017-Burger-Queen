@@ -25,13 +25,6 @@ export default function Menu({ categories, filterItems, activeCategory, menuItem
       setCartItems(cartItems.map((x) => x.id === product.id ? { ...exist, quantity: exist.quantity - 1 } : x));
     }
   };
-  const getDate = () => {
-    const hoy = new Date();
-    const fecha = `${hoy.getDate()} - ${(hoy.getMonth() + 1)} - ${hoy.getFullYear()}`;
-    const hora = `${hoy.getHours()}:${hoy.getMinutes()}:${hoy.getSeconds()}`;
-    const fechaYHora = `${fecha} ${hora}`;
-    return fechaYHora;
-  };
   return (
     <>
       <MetaDecorator title="Menú - Spooky Burger" />
@@ -42,12 +35,16 @@ export default function Menu({ categories, filterItems, activeCategory, menuItem
         </section>
         <section className="menuContainer">
           <section id="menu">
-            <Categories
-              categories={categories}
-              filterItems={filterItems}
-              activeCategory={activeCategory}
-            />
-            <MenuItems onAdd={onAdd} items={menuItems} />
+            <section>
+              <Categories
+                categories={categories}
+                filterItems={filterItems}
+                activeCategory={activeCategory}
+              />
+            </section>
+            <section id="menuTable">
+              <MenuItems onAdd={onAdd} items={menuItems} />
+            </section>
           </section>
           <Order onAdd={onAdd} onRemove={onRemove} cartItems={cartItems} removeAllItems={removeAllItems} />
         </section>
