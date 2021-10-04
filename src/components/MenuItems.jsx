@@ -8,12 +8,12 @@ export default function MenuItems({ items, onAdd }) {
         return (
           <article key={id} className="menu-item">
             <div className="eachItem">
-              <h4>
+              <p>
                 {title}
-              </h4>
-              <h4>
+              </p>
+              <p>
                 ${price}
-              </h4>
+              </p>
               <div>
                 <button onClick={() => onAdd(item)} type="button" className="addToOrder">Agregar</button>
               </div>

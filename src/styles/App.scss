@@ -33,12 +33,6 @@ body {
   border-radius: 8px;
 }
 
-// .menuLinks:focus {
-//   // background-color: $ligthOrange;
-//   // color: $blueBackground;
-//   box-shadow: 0 0 0 2px $white, 0 0 3px 5px $ligthOrange;
-// }
-
 h1,
 h2 {
   font-family: $titleFont;
@@ -106,11 +100,12 @@ p {
 }
 
 .addToOrder {
-  width: 80px;
-  height: 20px;
-  background-color: $darkOrange;
-  color: $white;
+  width: 100px;
+  height: 30px;
+  background-color: $ligthOrange;
+  color: $blueBackground;
   font-size: 15px;
+  font-weight: bolder;
   border: none;
   border-radius: 10px;
   margin: 5px;

@@ -152,11 +152,12 @@ p {
 }
 
 .addToOrder {
-  width: 80px;
-  height: 20px;
-  background-color: #de432f;
-  color: #e3deb8;
+  width: 100px;
+  height: 30px;
+  background-color: #faab23;
+  color: #071433;
   font-size: 15px;
+  font-weight: bolder;
   border: none;
   border-radius: 10px;
   margin: 5px;

@@ -18,7 +18,7 @@ function NavWaiter() {
         Inicio
       </NavLink>
       <NavLink to="/SCL017-Spooky-Burger/waiters" className="navbarLinks" activeClassName="active">
-        Waiter
+        Meseros
       </NavLink>
     </nav>
   );
@@ -31,7 +31,7 @@ function NavTables() {
         Inicio
       </NavLink>
       <NavLink to="/SCL017-Spooky-Burger/waiters" className="navbarLinks">
-        Waiter
+        Meseros
       </NavLink>
       <NavLink to="/SCL017-Spooky-Burger/tables" className="navbarLinks" activeClassName="active">
         Mesas
@@ -47,7 +47,7 @@ function NavMenu() {
         Inicio
       </NavLink>
       <NavLink to="/SCL017-Spooky-Burger/waiters" className="navbarLinks">
-        Waiter
+        Meseros
       </NavLink>
       <NavLink to="/SCL017-Spooky-Burger/tables" className="navbarLinks">
         Mesas
@@ -65,33 +65,13 @@ function NavKitchen() {
       <NavLink to="/SCL017-Spooky-Burger/" exact className="navbarLinks">
         Inicio
       </NavLink>
-      <NavLink to="/SCL017-Spooky-Burger/orders" className="navbarLinks" activeClassName="active">
+      <NavLink to="/SCL017-Spooky-Burger/kitchen" className="navbarLinks" activeClassName="active">
         Pedidos
       </NavLink>
     </nav>
   );
 }
-function NavOrders() {
-  return (
-    <nav className="navbar">
-      <NavLink to="/SCL017-Spooky-Burger/" exact className="navbarLinks">
-        Inicio
-      </NavLink>
-      <NavLink to="/SCL017-Spooky-Burger/waiters" className="navbarLinks">
-        Waiter
-      </NavLink>
-      <NavLink to="/SCL017-Spooky-Burger/tables" className="navbarLinks">
-        Mesas
-      </NavLink>
-      <NavLink to="/SCL017-Spooky-Burger/menu" className="navbarLinks">
-        Menú
-      </NavLink>
-      <NavLink to="/SCL017-Spooky-Burger/orders" className="navbarLinks" activeClassName="active">
-        Pedidos
-      </NavLink>
-    </nav>
-  );
-}
+
 export {
-  NavWaiter, NavTables, NavMenu, NavLanding, NavKitchen, NavOrders,
+  NavWaiter, NavTables, NavMenu, NavLanding, NavKitchen,
 };
