@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
 import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
+import nextId from 'react-id-generator';
 import db from '../firebase';
 
 export default function Order(props) {
@@ -20,6 +21,7 @@ export default function Order(props) {
   const totalPrice = itemsPrice;
   const toFirebase = async () => {
     const docRef = await addDoc(collection(db, 'orders'), {
+      OrderId: nextId('order-'),
       Mesero: waiter,
       Mesa: table,
       Total: totalPrice,

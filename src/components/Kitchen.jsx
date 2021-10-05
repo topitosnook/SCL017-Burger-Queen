@@ -27,6 +27,7 @@ export default function Kitchen() {
         <h1>Pedidos</h1>
         <table id="tableOrders">
           <thead>
+            <th>N° Orden</th>
             <th>Mesa</th>
             <th>Mesero</th>
             <th>Total</th>
@@ -36,6 +37,7 @@ export default function Kitchen() {
           {pedidos.map((pedido) => {
             return (
               <tr key={pedido.id}>
+                <td>{pedido.OrderId}</td>
                 <td>{pedido.Mesa}</td>
                 <td>{pedido.Mesero}</td>
                 <td>${pedido.Total}</td>
