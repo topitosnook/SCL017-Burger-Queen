@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types';
 
 export default function Waiter(props) {
   const { waiter } = props;
@@ -14,4 +13,3 @@ export default function Waiter(props) {
     </>
   );
 }
-// Waiter.propTypes = { waiter: PropTypes.string.isRequired };
