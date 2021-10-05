@@ -94,7 +94,7 @@ p {
 }
 
 #add {
-  @include simbol(#7c945b);
+  @include simbol($green);
 }
 #deduct {
   @include simbol($darkOrange);
@@ -145,7 +145,7 @@ p {
 }
 
 #tableOrders {
-  width: 80%;
+  width: 100%;
 }
 
 table,
@@ -159,4 +159,30 @@ td {
 tr:hover {
   background-color: $ligthOrange;
   color: $blueBackground;
+}
+#buttonPlace{
+  text-align: center;
+}
+.waitingOrderButton{
+  width: auto;
+  height: 30px;
+  background-color: $white;
+  color: $blueBackground;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 3px solid $blueBackground;
+  margin: 5px;
+}
+
+.doneOrderButton{
+  background-color: $green;
+  color: $blueBackground;
+  width: auto;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 3px solid $blueBackground;
+  margin: 5px;
 }

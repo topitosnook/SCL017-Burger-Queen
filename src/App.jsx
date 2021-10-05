@@ -50,7 +50,6 @@ function App() {
               menuItems={menuItems}
               cartItems={cartItems}
               setCartItems={setCartItems}
-              // cartFromLocalStorage={cartFromLocalStorage}
             />
           </Route>
           <Route path="/SCL017-Spooky-Burger/kitchen">

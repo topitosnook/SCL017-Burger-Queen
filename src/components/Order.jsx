@@ -27,6 +27,7 @@ export default function Order(props) {
       Total: totalPrice,
       Time: getDate(),
       Order: cartItems,
+      Terminado: 'Pedido esperando',
     });
     removeAllItems();
   };

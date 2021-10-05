@@ -3,6 +3,7 @@ import { collection, getDocs, orderBy, query } from 'firebase/firestore';
 import db from '../firebase';
 import MetaDecorator from './MetaDecorator';
 import { NavKitchen } from './Nav';
+import KitchenItems from './KitchenItems';
 
 export default function Kitchen() {
   const [pedidos, setPedidos] = useState([]);
@@ -18,7 +19,7 @@ export default function Kitchen() {
   };
   useEffect(() => {
     getData();
-  }, []);
+  }, [pedidos]);
   return (
     <>
       <MetaDecorator title="Pedidos - Spooky Burger" />
@@ -36,20 +37,7 @@ export default function Kitchen() {
           </thead>
           {pedidos.map((pedido) => {
             return (
-              <tr key={pedido.id}>
-                <td>{pedido.OrderId}</td>
-                <td>{pedido.Mesa}</td>
-                <td>{pedido.Mesero}</td>
-                <td>${pedido.Total}</td>
-                <td>
-                  <ul>
-                    {pedido.Order.map((item) => {
-                      return <li key={item.id}>{item.quantity} x {item.title}</li>;
-                    })}
-                  </ul>
-                </td>
-                <td>{pedido.Terminado}</td>
-              </tr>
+              <KitchenItems pedido={pedido} />
             );
           })}
         </table>
