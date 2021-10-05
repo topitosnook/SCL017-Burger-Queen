@@ -5,6 +5,7 @@ import Order from './Order';
 import { NavMenu } from './Nav';
 import MetaDecorator from './MetaDecorator';
 
+// const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]');
 export default function Menu({ categories, filterItems, activeCategory, menuItems, cartItems, setCartItems }) {
   const removeAllItems = () => {
     setCartItems([]);

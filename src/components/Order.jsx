@@ -4,6 +4,7 @@ import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import db from '../firebase';
 
+// const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]');
 export default function Order(props) {
   const location = useLocation();
   const { cartItems, onAdd, onRemove, removeAllItems } = props;
@@ -28,6 +29,9 @@ export default function Order(props) {
       Terminado: false,
     });
   };
+  useEffect(() => {
+    localStorage.setItem('cart', JSON.stringify(cartItems));
+  }, [cartItems]);
   return (
     <>
       <aside id="order">

@@ -8,11 +8,11 @@ import Menu from './components/Menu';
 import './styles/App.css';
 import items from './components/data';
 
+const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]');
 const allCategories = [
   'Todas',
   ...new Set(items.products.map((item) => item.category2)),
 ];
-const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]');
 function App() {
   const { products } = items;
   const [menuItems, setMenuItems] = useState(products);
@@ -50,6 +50,7 @@ function App() {
               menuItems={menuItems}
               cartItems={cartItems}
               setCartItems={setCartItems}
+              // cartFromLocalStorage={cartFromLocalStorage}
             />
           </Route>
           <Route path="/SCL017-Spooky-Burger/kitchen">
