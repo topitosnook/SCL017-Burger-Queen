@@ -8,9 +8,6 @@ export default function Order(props) {
   const location = useLocation();
   const { cartItems, onAdd, onRemove, removeAllItems } = props;
   const itemsPrice = cartItems.reduce((a, c) => a + c.price * c.quantity, 0);
-  // useEffect(() => {
-  //   localStorage.setItem('cart', JSON.stringify(cartItems));
-  // }, [cartItems]);
   const waiter = location.state[0];
   const table = location.state[1];
   const getDate = () => {
@@ -28,6 +25,7 @@ export default function Order(props) {
       Total: totalPrice,
       Time: getDate(),
       Order: cartItems,
+      Terminado: false,
     });
   };
   return (
@@ -74,13 +72,11 @@ export default function Order(props) {
             </>
           )}
           <div>
-            {/* <Link to={{ path: '/SCL017-Spooky-Burger/kitchen', state: [location.state[0], location.state[1]] }}> */}
             <Link to="/SCL017-Spooky-Burger/kitchen">
-              <button type="button" onClick={toFirebase}>Enviar Pedido</button>
+              <button type="button" onClick={toFirebase} className="interactionWithOrder" id="sendOrder">Enviar Pedido</button>
             </Link>
-            <button type="button" onClick={removeAllItems}>Borrar Pedido</button>
+            <button type="button" onClick={removeAllItems} className="interactionWithOrder" id="eraseOrder">Borrar Pedido</button>
           </div>
-
         </div>
       </aside>
     </>

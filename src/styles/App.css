@@ -4,6 +4,7 @@ body {
   padding: 0;
   background-color: #071433;
   color: #e3deb8;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .App {
@@ -181,5 +182,40 @@ p {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+.interactionWithOrder {
+  width: auto;
+  height: 30px;
+  background-color: #de432f;
+  color: #e3deb8;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  margin: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#eraseOrder {
+  border: solid;
+  border-color: #de432f;
+  background-color: #291a54;
+}
+
+#tableOrders {
+  width: 80%;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 3px solid #de432f;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #faab23;
+  color: #071433;
 }
 /*# sourceMappingURL=App.css.map */

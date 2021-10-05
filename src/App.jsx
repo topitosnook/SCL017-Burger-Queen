@@ -9,7 +9,7 @@ import './styles/App.css';
 import items from './components/data';
 
 const allCategories = [
-  'all',
+  'Todas',
   ...new Set(items.products.map((item) => item.category2)),
 ];
 const cartFromLocalStorage = JSON.parse(localStorage.getItem('cart') || '[]');
@@ -20,7 +20,7 @@ function App() {
   const [categories, setCategories] = useState(allCategories);
   const filterItems = (category) => {
     setActiveCategory(category);
-    if (category === 'all') {
+    if (category === 'Todas') {
       setMenuItems(products);
       return;
     }

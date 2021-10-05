@@ -5,6 +5,7 @@ body {
   padding: 0;
   background-color: $blueBackground;
   color: $white;
+  font-family: $bodyFont;
 }
 
 .App {
@@ -117,9 +118,45 @@ p {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center
+  align-items: center;
 }
+
 .itemsInOrder {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.interactionWithOrder {
+  width: auto;
+  height: 30px;
+  background-color: $darkOrange;
+  color: $white;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  margin: 5px;
+  font-family: $bodyFont;
+}
+
+#eraseOrder {
+  border: solid;
+  border-color: $darkOrange;
+  background-color: $purpleBackground;
+}
+
+#tableOrders {
+  width: 80%;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  border: 3px solid $darkOrange;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: $ligthOrange;
+  color: $blueBackground;
 }

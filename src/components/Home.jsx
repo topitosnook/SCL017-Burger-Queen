@@ -17,7 +17,7 @@ function Home() {
         </Link>
         <Link to="/SCL017-Spooky-Burger/waiters">
           <button className="electionButton" type="button">
-            Meseros
+            Meseres
           </button>
         </Link>
       </main>

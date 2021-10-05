@@ -9,13 +9,11 @@ export default function Kitchen() {
   const getData = async () => {
     const docs = [];
     const orderRef = collection(db, 'orders');
-    const q = query(orderRef, orderBy('Time', 'desc'));
-    const querySnapshot = await getDocs(q);
-    // console.log(querySnapshot);
+    const orderQuery = query(orderRef, orderBy('Time', 'desc'));
+    const querySnapshot = await getDocs(orderQuery);
     querySnapshot.forEach((doc) => {
       docs.push({ ...doc.data(), id: doc.id });
     });
-    // return docs;
     setPedidos(docs);
   };
   useEffect(() => {
@@ -26,12 +24,14 @@ export default function Kitchen() {
       <MetaDecorator title="Pedidos - Spooky Burger" />
       <NavKitchen />
       <main>
-        <table>
+        <h1>Pedidos</h1>
+        <table id="tableOrders">
           <thead>
             <th>Mesa</th>
             <th>Mesero</th>
             <th>Total</th>
-            <th>Time</th>
+            <th>Pedido</th>
+            <th>Estado</th>
           </thead>
           {pedidos.map((pedido) => {
             return (
@@ -39,7 +39,14 @@ export default function Kitchen() {
                 <td>{pedido.Mesa}</td>
                 <td>{pedido.Mesero}</td>
                 <td>${pedido.Total}</td>
-                <td>{pedido.Time}</td>
+                <td>
+                  <ul>
+                    {pedido.Order.map((item) => {
+                      return <li key={item.id}>{item.quantity} x {item.title}</li>;
+                    })}
+                  </ul>
+                </td>
+                <td>{pedido.Terminado}</td>
               </tr>
             );
           })}

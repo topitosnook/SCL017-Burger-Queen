@@ -9,11 +9,11 @@ export default function Waiters() {
       <MetaDecorator title="Ingreso Personal - Spooky Burger" />
       <NavWaiter />
       <main>
-        <h1> Eleccion del Meseros</h1>
-        <Waiter waiter="Mesero 1" />
-        <Waiter waiter="Mesero 2" />
-        <Waiter waiter="Mesero 3" />
-        <Waiter waiter="Mesero 4" />
+        <h1> Eleccion del Meseres</h1>
+        <Waiter waiter="Mesere 1" />
+        <Waiter waiter="Mesere 2" />
+        <Waiter waiter="Mesere 3" />
+        <Waiter waiter="Mesere 4" />
       </main>
     </>
   );
