@@ -7,7 +7,7 @@ export default function KitchenItems({ pedido }) {
   const changeTerminado = (e) => {
     const orderRef = doc(db, 'orders', pedido.id);
     setDoc(orderRef, {
-      OrderId: pedido.OrderId,
+      // OrderId: pedido.OrderId,
       Mesero: pedido.Mesero,
       Mesa: pedido.Mesa,
       Total: pedido.Total,
@@ -24,7 +24,7 @@ export default function KitchenItems({ pedido }) {
   return (
     <>
       <tr key={pedido.id}>
-        <td>{pedido.OrderId}</td>
+        {/* <td>{pedido.OrderId}</td> */}
         <td>{pedido.Mesa}</td>
         <td>{pedido.Mesero}</td>
         <td>${pedido.Total}</td>

@@ -28,7 +28,7 @@ export default function Kitchen() {
         <h1>Pedidos</h1>
         <table id="tableOrders">
           <thead>
-            <th>N° Orden</th>
+            {/* <th>N° Orden</th> */}
             <th>Mesa</th>
             <th>Mesero</th>
             <th>Total</th>
